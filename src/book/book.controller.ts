@@ -16,7 +16,7 @@ getAllBook():book[]{
 updateBook(@Body()book:book):string{
     return this.bookService.updateBookService(book);
 }
-@Delete('/delete/:id')
+@Delete('/delete')
 deleteBook(@Param("id")bookId:string):string{
     return this.bookService.deleteBookService(bookId);
 }
